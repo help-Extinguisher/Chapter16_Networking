@@ -14,7 +14,7 @@ public class TcpClient {
 		showMenu();
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("            >");
+		System.out.printf("            >");
 		int select = sc.nextInt();
 		
 		switch (select) {
