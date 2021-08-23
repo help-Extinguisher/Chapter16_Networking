@@ -13,7 +13,7 @@ public class EchoClient2 {
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		
 		// 그사람쪽의 아이피와 포트번호를 적어준다
-		Socket socket = new Socket("localhost", 8111);
+		Socket socket = new Socket("192.168.0.253", 8111);
 		System.out.println("서버 연결 완료!");
 		
 		
@@ -42,7 +42,7 @@ public class EchoClient2 {
 				break;
 			}
 		}
-~~
+
 		
 		
 		dos.close();

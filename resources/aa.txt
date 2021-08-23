@@ -1,0 +1,58 @@
+Java development user guide > Getting Started > Basic tutorial > Editing Java elements
+
+Using code templates 
+
+In this section you will use content assist to fill in a template for a common loop structure.Open junit.samples/VectorTest.java file in the Java editor if you do not alreadyhave it open. 
+1.Start adding a new method by typing the following:
+
+public void testValues() {
+    Integer[] expected= new Integer[3];
+    for
+
+
+2.With the cursor at the end of for, press Ctrl+Space to enable content assist. You will see a list of common templates for "for" loops. When you single-click a template, or select it with the Up or Downarrow keys, you'll see the code for the template inits help message.  Note that the local array name is guessed automatically. 
+Content assist for for 
+
+3.Choose the for - iterate over array entry and press Enter to confirm the template. The template will be inserted in your source code. 
+Inserted for template 
+
+4.Next we change the name of the index variable from i to e. To do so simply press e, asthe index variable is automatically selected.Observe that the name of the index variable changes at all places. When inserting a template all references to the same variableare connected to each other. So changing one changes all the other valuesas well. 
+Altered for template 
+
+5.Pressing the tab key moves the cursor to the next variable of the code template. This is the array expected. 
+Altered for template 
+Since we don't want to change the name (it was guessed right by the template) we presstab again, which leaves the template since there aren't any variables left to edit. 
+6.Complete the for loop as follows:
+
+for (int e= 0; e < expected.length; e++) {
+    expected[e]= new Integer(e + 1);
+}
+Integer[] actual= to
+
+
+7.With the cursor at the end of to, press Ctrl+Space to enable content assist. Pick toarray - convert collection to arrayand press Enter to confirm the selection (or double-click theselection). 
+toarray template 
+The template is inserted in the editor and type is highlighted and selected. 
+Inserted toarray template 
+
+8.Overwrite the selection by typing Integer. The type of array constructor changeswhen you change the selection. 
+9.Press Tab to move the selection to collection andoverwrite it by typing fFull. 
+Inserted toarray template 
+
+10.Add a semicolon and the following lines of code to complete the method:
+
+assertEquals(expected.length, actual.length);
+for (int i= 0; i < actual.length; i++)
+    assertEquals(expected[i], actual[i]);
+
+
+11.Save the file. 
+
+Next Section: Organizing import statements 
+
+Related concepts
+Java editor
+Templates 
+Related references
+Templates Preferences
+Java Editor Preferences 
